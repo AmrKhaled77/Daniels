@@ -264,7 +264,7 @@ background-size: cover;
 
 
 .testimonials{
-    height: 80vh;
+    height: 70vh;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -400,13 +400,34 @@ input:focus {
     z-index: -1;
   }
 
-  /* .tittle::after{
-   
-  } */
+ 
 
 
 
   
 
 
+  @media (max-width: 1000px) {
+    .navbar{
+        background-color: white;
+        height: 80px;
+    }
 
+
+    .testimonials{
+        height: 80vh;
+       background-color: #F7F7F7;
+    background-position: center;
+    background-size: cover;
+    }
+  }
+
+
+
+  @media (max-width: 991.98px) {
+    .navbar-collapse {
+        width: 100%;
+      background-color: #f7f7f799; /* Dark semi-transparent */
+      padding: 1rem;
+    }
+}
