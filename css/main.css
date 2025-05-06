@@ -1,0 +1,412 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: "Poppins", sans-serif;
+    
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+body:has(#home:target)  #nav1::after,
+body:has(#about:target)  #nav2::after,
+body:has(#services:target)  #nav3::after,
+body:has(#protfolio:target)  #nav4::after,
+body:has(#dropdown:target)  #nav5::after,
+body:has(#Contact:target)  #nav6::after
+
+
+
+
+
+
+{
+ 
+  width: 78%;
+}
+.home{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.505)) , url("../imgs/imgs/bg.jpg");
+    background-size:     cover;  
+    background-position: center center;
+}
+/* h2.section-title span{
+    border-bottom: 2px dotted rgba(128, 128, 128, 0.6);
+} */
+
+.navbar{
+    background-color: white;
+    height: 60px;
+}
+
+.navbar a.navbar-brand{
+    font-size: 22px;
+    margin: 0;
+    font-weight: 700;
+ 
+} 
+
+.navbar .nav-link {
+    position: relative;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    
+  }
+
+  
+
+
+
+
+  .navbar .active::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background-color: black; 
+    transition: width 0.3s ease;
+  }
+
+
+  
+  .navbar .active:hover::after,
+  .navbar .nav-link.active::after {
+    width: 78%;
+  }
+
+
+  .active{
+    transition: width 0.3s ease;
+  }
+
+
+
+
+
+
+
+.home h1{
+    font-size: 65px;
+    color: white;
+}
+
+.container{
+    width: 80% !important;
+    
+}
+
+
+.profile-img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+
+  .btn-outline-dark:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  .btn-dark:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .progress-bar {
+    background-color: #000;
+  }
+
+
+
+
+  .service-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .service-card:hover .service-icon  {
+    background-color:black;
+  }
+  .service-card:hover .service-icon i  {
+   color: white;
+  }
+  i{
+    transition: 0.5s;
+  }
+
+  
+
+  .service-icon {
+    font-size: 2.5rem;
+    color: #000;
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    display: inline-block;
+    transition:  0.3s;
+  }
+
+  .service-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .section-title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .hover-item{
+    left: 50%;
+    
+    transform: translateX(-50%);
+    width: 97%;
+    height: 97%;
+    margin: auto;
+    background-color: white;
+  bottom: 0%;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.hover-item .icons{
+   
+    margin-top: 80px;
+    transition: 1s;
+}
+
+
+.hover-item .icons i{
+    padding: 7px;
+    color: white;
+    border-radius: 50%;
+    background: #000;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.hover-item .icons i:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+.hover-item .text{
+    position: relative;
+    transition: 1s;
+    top: -10px;
+}
+.Portfolio .item:hover .hover-item{
+    bottom: 1.5%;
+    opacity: 1;
+}
+.Portfolio .item:hover .icons{
+    margin-top: 65px;
+}
+.Portfolio .item:hover .text{
+    top: 0px;
+}
+
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: black ;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.nav-pills .nav-link.active {
+    color: black;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 22px;
+    position: relative;
+   }
+.nav-pills .nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    height: 3px;
+    width: 80%;
+    background-color: black; 
+    transition: width 0.3s ease;
+
+   }
+.nav-pills .nav-link {
+    color: black;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 22px;
+   }
+
+   /* #F7F7F7 */
+
+
+   .testimonials{
+    height: 60vh;
+   background-color: #F7F7F7;
+background-position: center;
+background-size: cover;
+}
+
+
+.testimonials{
+    height: 80vh;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%; 
+    background-color: #D6D6D6;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+    border: none;
+    margin: 0 5px; 
+  }
+  
+  .carousel-indicators .active {
+    opacity: 1;
+    background-color: #869791; 
+  }
+
+  .carousel-item {
+    transition: 1s;
+}
+
+.team-card .overlay {
+    width: 97%;
+    height: 97%;
+    top: 1.5%;
+    left: 1.5%;
+    
+  background-color: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+ 
+  transform:  scale(0.2) rotatey(180deg);
+  transition:  0.7s ;
+  z-index: 1;
+  
+}
+
+.team-card:hover .overlay {
+  opacity: 1;
+  transform:  scale(1) rotatey(360deg);
+}
+
+.overlay .social-icons i{
+    border: 1px solid black;
+    transition: 0.3s;
+    color: white;
+}
+.overlay .social-icons i:hover{
+    background-color: white;
+    color: black;
+}
+
+.social-icons i {
+  font-size: 20px;
+  background-color: black;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+
+.mb-3 i{
+    background-color: #F4F4F4;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.mb-3:hover i{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.Contact{
+    background-color: white;
+}
+
+
+input{
+    border: none !important;
+  
+  background-color: black ;
+  color: #000; 
+  border-radius: 0;
+  outline: none;
+}
+
+textarea{
+
+border: none !important;
+  background-color: black;
+  color: #000; 
+  border-radius: 0;
+  outline: none;
+}
+
+input:focus {
+
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
+
+  }
+  textarea:focus {
+
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
+  }
+
+
+  .footer{
+    height: 10vh;
+  }
+
+  .tittle{
+    position: relative;
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 2em;
+    text-align: center;
+    color: #343434;
+    font-size: 700px;
+
+  }
+
+  .tittle h2:after{
+    content: "";
+    width: 100%;
+    height: 10px;
+    background-image: url(../imgs/imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    z-index: -1;
+  }
+
+  /* .tittle::after{
+   
+  } */
+
+
+
+  
+
+
+
